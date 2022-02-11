@@ -24,7 +24,7 @@ export default {
     },
     methods: {
         test() {
-            instance.get('/v1/api/test');
+            instance.get('/v1/api/fitsize');
         }
     }
 }
