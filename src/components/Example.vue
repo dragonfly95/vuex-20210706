@@ -9,11 +9,22 @@
 
 
 <script>
+
+import {instance } from "../plugins/url";
+
 export default {
     name: 'Example',
     data() {
         return {
             msg: 'basic panel example'
+        }
+    },
+    created() {
+        this.test();
+    },
+    methods: {
+        test() {
+            instance.get('/v1/api/test');
         }
     }
 }
